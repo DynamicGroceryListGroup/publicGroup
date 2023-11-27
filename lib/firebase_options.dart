@@ -17,24 +17,15 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -52,11 +43,39 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyB8uw1pSVPY5xkBqBKVYHBKsRatuVjAQGI',
+    appId: '1:253723209840:web:ddb8e282b0fd9789f1c4b5',
+    messagingSenderId: '253723209840',
+    projectId: 'dynamicgrocerylist-d0321',
+    authDomain: 'dynamicgrocerylist-d0321.firebaseapp.com',
+    storageBucket: 'dynamicgrocerylist-d0321.appspot.com',
+    measurementId: 'G-0BCC2G2528',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCNBaTljuXRGkPCJR5xEy0Cj0XSv2YMJvg',
-    appId: '1:387455532025:android:71c34085027bb179471b28',
-    messagingSenderId: '387455532025',
-    projectId: 'fir-test-7d615',
-    storageBucket: 'fir-test-7d615.appspot.com',
+    apiKey: 'AIzaSyA193mi2ThV83utxhZT0efd2x_-8Qc7Q9U',
+    appId: '1:253723209840:android:b539d46af9037c7af1c4b5',
+    messagingSenderId: '253723209840',
+    projectId: 'dynamicgrocerylist-d0321',
+    storageBucket: 'dynamicgrocerylist-d0321.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyB_d13vhBeTDzv_0VK5_GsMBPVGcegNR78',
+    appId: '1:253723209840:ios:dba212d84524561af1c4b5',
+    messagingSenderId: '253723209840',
+    projectId: 'dynamicgrocerylist-d0321',
+    storageBucket: 'dynamicgrocerylist-d0321.appspot.com',
+    iosBundleId: 'com.example.firebaseTest',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyB_d13vhBeTDzv_0VK5_GsMBPVGcegNR78',
+    appId: '1:253723209840:ios:f336212aa3ffd10cf1c4b5',
+    messagingSenderId: '253723209840',
+    projectId: 'dynamicgrocerylist-d0321',
+    storageBucket: 'dynamicgrocerylist-d0321.appspot.com',
+    iosBundleId: 'com.example.firebaseTest.RunnerTests',
   );
 }

@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "387455532025",
-    "project_id": "fir-test-7d615",
-    "storage_bucket": "fir-test-7d615.appspot.com"
+    "project_number": "253723209840",
+    "project_id": "dynamicgrocerylist-d0321",
+    "storage_bucket": "dynamicgrocerylist-d0321.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:387455532025:android:71c34085027bb179471b28",
+        "mobilesdk_app_id": "1:253723209840:android:b539d46af9037c7af1c4b5",
         "android_client_info": {
           "package_name": "com.example.firebase_test"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCNBaTljuXRGkPCJR5xEy0Cj0XSv2YMJvg"
+          "current_key": "AIzaSyA193mi2ThV83utxhZT0efd2x_-8Qc7Q9U"
         }
       ],
       "services": {
@@ -26,15 +26,15 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:387455532025:android:400cc8b3bbe3de3e471b28",
+        "mobilesdk_app_id": "1:253723209840:android:b3bb3e2fd0b49cc1f1c4b5",
         "android_client_info": {
-          "package_name": "hh.j.h"
+          "package_name": "com.example.grocery_list"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCNBaTljuXRGkPCJR5xEy0Cj0XSv2YMJvg"
+          "current_key": "AIzaSyA193mi2ThV83utxhZT0efd2x_-8Qc7Q9U"
         }
       ],
       "services": {
